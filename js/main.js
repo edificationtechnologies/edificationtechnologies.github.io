@@ -357,23 +357,24 @@ TABLE OF CONTENTS
 		
 		//-- 5.10 activate youtube video background
 		if($(".bg-container-youtube").is(':visible')){
-			if($(window).width() >= 1200){
+			$('.player').mb_YTPlayer();
+			// if($(window).width() >= 1200){
 				/*
 				* Please note that this player doesn’t work as background for devices due to the restriction policy adopted by all on 
 				* managing multimedia files via javascript. It fallsback to the default Youtube player if used as player (not applied to the body).
 				*/
 				
-				$('.player').mb_YTPlayer();
-			}
-			else{
-				$(".bg-container-youtube").backstretch([
-					"http://placehold.it/2560x1600",
-					"http://placehold.it/2560x1600"
-				],{
-					duration:6000,
-					fade:'normal'
-				});
-			}
+			// 	$('.player').mb_YTPlayer();
+			// }
+			// else{
+			// 	$(".bg-container-youtube").backstretch([
+			// 		"http://placehold.it/2560x1600",
+			// 		"http://placehold.it/2560x1600"
+			// 	],{
+			// 		duration:6000,
+			// 		fade:'normal'
+			// 	});
+			// }
 		}
 				
 		//-- 5.11 set background for star-effect
